@@ -4,7 +4,7 @@ network:
  ethernets:
   enp0s3:
    dhcp4: true
-   enp0s8:
-    addresses: [192.168.12.2/24]
-   enp0s9:
-    addresses: [192.168.23.2/24]
+  enp0s8:
+   addresses: [192.168.12.2/24]
+  enp0s9:
+   addresses: [192.168.23.2/24]
