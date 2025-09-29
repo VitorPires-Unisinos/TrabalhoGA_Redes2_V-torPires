@@ -1,8 +1,11 @@
 # TrabalhoGA_Redes2_V-torPires
 ## Objetivo
-Configurar e avaliar o desempenho de dois protocolos de roteamento dinâmico, RIP e OSPF, em uma rede virtual com três roteadores utilizando a plataforma BIRD, focando em métricas da Camada 3 do modelo OSI.
+• Configurar e avaliar o desempenho de dois protocolos de roteamento dinâmico, RIP e OSPF, em uma rede virtual com três roteadores utilizando a plataforma BIRD, focando em métricas da Camada 3 do modelo OSI.
 ## Etapa 1
-Após criar as 3VM'S (Roteador1, Roteador2 e Roteador3) utilizar o comando "sudo nano /etc/netplan/00-installer-config.yaml" no terminal em cada uma delas. Limpe tudo e cole o conteúdo do netplan respectivo de cada roteador disponível na pasta configs. Use o comando sudo "netplan apply" para validar as modificações
+• Após criar as 3VM'S (Roteador1, Roteador2 e Roteador3) utilizar o comando "sudo nano /etc/netplan/00-installer-config.yaml" no terminal em cada uma delas. Limpe tudo e cole o conteúdo do netplan respectivo de cada roteador disponível na pasta configs. Use o comando sudo "netplan apply" para validar as modificações.
 ## Etapa 2
-Utilize os seguintes comandos no terminal dos 3 roteadores: echo 'net.ipv4.ip_forward=1' | sudo tee -a /etc/sysctl.conf 
-sudo sysctl -p
+• Utilize os seguintes comandos no terminal dos 3 roteadores: "echo 'net.ipv4.ip_forward=1' | sudo tee -a /etc/sysctl.conf" e "sudo sysctl -p".
+## Etapa 3
+• Em todos os roteadores, instale o BIRD com o comando "sudo apt install bird2 -y"
+• Para backup utilize "sudo cp /etc/bird/bird.conf /etc/bird/bird.conf.backup"
+• Para configurar por arquivo único utilize: "sudo ls -la /etc/bird/"
