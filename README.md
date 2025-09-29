@@ -10,6 +10,6 @@
 • Para backup utilize "sudo cp /etc/bird/bird.conf /etc/bird/bird.conf.backup".
 • Para configurar por arquivo único utilize: "sudo ls -la /etc/bird/".
 ## Etapa 4
-• Use o comando "sudo nano /etc/bird/bird.conf" em cada roteador, e cole o conteúdo do bird.conf respectivo de cada roteador presente na pasta configs.
+• Use o comando "sudo nano /etc/bird/bird.conf" no terminal de cada roteador, e cole o conteúdo do bird.conf respectivo de cada roteador presente na pasta configs.
 ## Etapa 5
 • Para testes, habilidade o console BIRD com o comando "sudo birdc". Utilize comandos como •show status •show protocols •show route e etc..
